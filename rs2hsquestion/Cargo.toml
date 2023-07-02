@@ -7,6 +7,7 @@ edition = "2021"
 
 [dependencies]
 hs-bindgen = { version = "0.8.0", features = ["full"] }
+hs-bindgen-traits = "0.8.0"
 question = "0.2.2"
 
 [lib]

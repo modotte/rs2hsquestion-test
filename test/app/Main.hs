@@ -1,4 +1,9 @@
 module Main where
 
+import Control.Monad (void)
+import Rs2hsquestion (askConfirmation)
+
 main :: IO ()
-main = putStrLn "Hello, Haskell!"
+main = do
+  answer <- askConfirmation "Do you want to continue?"
+  print answer
